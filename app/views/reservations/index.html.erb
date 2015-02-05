@@ -1,0 +1,11 @@
+<h1>Reservations</h1>
+
+<ul>
+  <% @reservations.each do |reservation| %>
+  <li><%= reservation.date %> 開始時間：<% reservation.start %> 終了時間：<%= reservation.end %></li>
+  <% end %>
+</ul>
+
+<p>
+  <%= link_to "add", new_reservation_path %>
+</p>

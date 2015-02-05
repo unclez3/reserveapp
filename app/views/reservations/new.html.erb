@@ -1,0 +1,18 @@
+<h1>新規予約</h1>
+
+<%= form_for @reservation do |f| %>
+
+<p>
+  <%= f.label :date %>：<%= f.date_field :date %>
+</p>
+<p>
+  <%= f.label :start %>：<%= f.time_select :start %>
+</p>
+<p>
+  <%= f.label :end %>：<%= f.time_select :end %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+
+<% end %>
